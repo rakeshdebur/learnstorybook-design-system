@@ -1,9 +1,6 @@
-# v0.1.1 (Mon Feb 15 2021)
+# v0.1.0 (Tue Sep 03 2019)
 
-#### ⚠️ Pushed to `main`
-
-- first commit ([@rakeshdebur](https://github.com/rakeshdebur))
+- Created first version of the design system, with `Avatar`, `Badge`, `Button`, `Icon` and `Link` components.
 
 #### Authors: 1
-
-- [@rakeshdebur](https://github.com/rakeshdebur)
+- Tom Coleman ([@tmeasday](https://github.com/tmeasday))

@@ -1,5 +1,5 @@
 {
-  "name": "learnstorybook-design-system",
+  "name": "rakeshdebur-learnstorybook-design-system",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -15,16 +15,21 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      {
+        "absoluteRuntime": false
+      }
     ]
   },
   "browserslist": {
@@ -38,5 +43,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.16",
+    "@storybook/addon-actions": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/node-logger": "^6.1.18",
+    "@storybook/preset-create-react-app": "^3.1.6",
+    "@storybook/react": "^6.1.18",
+    "auto": "^10.16.5",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.2.1"
+  },
+  "description": "reusable component development with storybook",
+  "main": "index.js",
+  "repository": "https://github.com/rakeshdebur/learnstorybook-design-system.git",
+  "author": "rakeshdebur <rakesh.debur@gmail.com>",
+  "license": "MIT"
 }
